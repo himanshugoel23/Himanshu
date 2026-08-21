@@ -1,0 +1,12 @@
+name: crown run 1230am
+
+on:
+  schedule:
+    - cron: '0 19 * * *'
+  workflow_dispatch: {}
+
+jobs:
+  output-hi:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "hi"
